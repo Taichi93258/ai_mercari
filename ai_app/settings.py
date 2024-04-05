@@ -1,3 +1,5 @@
+#ai_app/settings.py
+
 """
 Django settings for ai_app project.
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure--1%@-lu(3&h#$ek3vfu476!t65pb$$_7@vgj@ac^#y7b1d6=gl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'nlp'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +124,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
